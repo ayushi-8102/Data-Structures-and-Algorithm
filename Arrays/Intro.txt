@@ -1,0 +1,12 @@
+STATIC VS DYNAMIC ARRAY 
+
+STATIC- Size cannot be changed
+In C program, Size have to be declared at compile time 
+but in cpp it can be done at runtime using cin>>n;A[n];
+A Normal array is created only in stack but we wewant to create a array into a heap
+then we have to make a pointer for that (vvv imp.)
+Look at the notebook for more!
+DYNAMIC-Can be changed 
+Now stack array cannot be resized at all but heap
+array alternatives like arraylist linkedlist can be resized!
+

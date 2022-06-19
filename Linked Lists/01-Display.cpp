@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+//displaying linked list!!!
+
+class Node{
+public:
+int data;
+Node*next;
+};
+
+int main(){
+  int a[]={2,0,2,0,5,1,0,4,4};
+  Node*head=new Node;
+  Node*temp;
+  Node*Last;
+  head->data=a[0];
+  head->next=nullptr;
+  Last=head;
+  for(int i=1;i<sizeof(a)/sizeof(a[0]); i++){
+    temp =new Node;
+    temp->data=a[i];
+    temp->next=nullptr;
+      // last's next is pointing to temp
+        Last->next = temp;
+        Last = temp;
+  }
+   Node* p = head;
+ 
+    while (p != nullptr){
+        cout << p->data << " -> " << flush;
+        p = p->next;
+    }
+ 
+    return 0;
+
+}
