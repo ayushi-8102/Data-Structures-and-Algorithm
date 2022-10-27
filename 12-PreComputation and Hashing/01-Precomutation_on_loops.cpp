@@ -18,4 +18,4 @@ cin>>t;
    cout<< fact[n]<<endl;
   }
     
-}
+}//TC O(N)
